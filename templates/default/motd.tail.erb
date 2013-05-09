@@ -9,9 +9,12 @@ Environment: <%= node.chef_environment %>
 <% end -%>
 Last Run: <%= ::Time.now %>
 
-Roles:
+Roles and Recipes:
 <% node['roles'].each do |role| -%>
-  <%= role %>
+  Role: <%= role %>
+<% end -%>
+<% node['recipes'].each do |recipe| -%>
+  Recipe: <%= recipe %>
 <% end -%>
 <% if node['tags'] && !node['tags'].empty? -%>
 
