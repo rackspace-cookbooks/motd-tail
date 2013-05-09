@@ -1,6 +1,21 @@
 Cheffile.lock
-.bundle
-.cache
-.kitchen
+metadata.json
+.vagrant
+Berksfile.lock
+*~
+*#
+.#*
+\#*#
+.*.sw[a-z]
+*.un~
 /cookbooks
 /tmp
+
+# Bundler
+Gemfile.lock
+bin/*
+.bundle/*
+
+# Test Kitchen 1.0
+.kitchen/
+.kitchen.local.yml
